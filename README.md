@@ -40,6 +40,7 @@ List of most frequently used git commands
 
 ## reset
 * git reset HEAD
+* git reset HEAD --hard
 * git reset <commit_hash>
 
 ## log
