@@ -1,7 +1,7 @@
 # git-cheatsheet
 List of most frequently used git commands
 
-## git checkout
+## checkout
 * git checkout origin/remoteBranchName -b localBranchName
 * git checkout .
 * get file/folder from another branch
@@ -14,11 +14,11 @@ List of most frequently used git commands
 * git push
 * git push origin localBranchName:remoteBranchName
 
-# alias
+## alias
 * git config --global alias.ALIAS "WHAT"
   - example: git config --global alias.st "status"
 
-## git branch
+## branch
 * git branch
 * git branch --sort=-committerdate  # DESC
 * git branch --sort=committerdate  # ASC
