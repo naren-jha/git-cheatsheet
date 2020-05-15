@@ -1,17 +1,28 @@
 # git-cheatsheet
 List of most frequently used git commands
 
-## search for branch name
-* git branch -a | grep -i “branchName”
-
 ## git checkout
-* git checkout -f origin/remoteBranchName -b localBranchName
+* git checkout origin/remoteBranchName -b localBranchName
 * git checkout .
 
-## add, commit, push
+## status, add, commit, push
+* git status
 * git add <file_or_folder1> <file_or_folder2> <file_or_folder3>
 * git commit -m “commit message”
-* git push origin -u localBranchName:remoteBranchName
+* git push origin localBranchName:remoteBranchName
+
+# alias
+* git config --global alias.ALIAS "WHAT"
+  - example: git config --global alias.st "status"
+
+## git branch
+* git branch
+* git branch --sort=-committerdate  # DESC
+* git branch --sort=committerdate  # ASC
+* git branch -a | grep -i “branchName”
+* create alias for colored branch listing in descending order of commit date
+  - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
+  - and then use git br
 
 ## remove untracked file/path:
 * git clean -df
