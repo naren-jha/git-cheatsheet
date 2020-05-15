@@ -9,6 +9,7 @@ List of most frequently used git commands
 * git status
 * git add <file_or_folder1> <file_or_folder2> <file_or_folder3>
 * git commit -m “commit message”
+* git push
 * git push origin localBranchName:remoteBranchName
 
 # alias
