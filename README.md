@@ -24,6 +24,7 @@ List of most frequently used git commands
 * create alias for colored branch listing in descending order of commit date
   - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
   - and then use git br
+* git branch -D <branch_name>
 
 ## remove untracked file/path:
 * git clean -df
