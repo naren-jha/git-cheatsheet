@@ -4,6 +4,8 @@ List of most frequently used git commands
 ## git checkout
 * git checkout origin/remoteBranchName -b localBranchName
 * git checkout .
+* get file/folder from another branch
+  - git checkout <branch> -- <file_or_folder_path>
 
 ## status, add, commit, push
 * git status
@@ -26,18 +28,16 @@ List of most frequently used git commands
   - and then use git br
 * git branch -D <branch_name>
 
-## remove untracked file/path:
+## clean
 * git clean -df
-* git clean -f <untracked_file_or_folder>
+* remove untracked file/path
+  - git clean -f <untracked_file_or_folder>
 
 ## diff
 * to see local changes made in a particular file
   - git diff <local_file_fully_qualified_name>
 * to see changes added as part of a particular commit:
   - git diff <commit_id>~ <commit_id>
-
-## get file/folder from another branch
-* git checkout <branch> -- <file_or_folder_path>
 
 ## reset
 * git reset HEAD
