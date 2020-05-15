@@ -20,13 +20,17 @@ List of most frequently used git commands
 
 ## branch
 * git branch
-* git branch --sort=-committerdate  # DESC
-* git branch --sort=committerdate  # ASC
-* git branch -a | grep -i “branchName”
+* list local branches in descending order of commit date
+  - git branch --sort=-committerdate  # DESC
+* list local branches in ascending order of commit date
+  - git branch --sort=committerdate  # ASC
+* search for a branch name
+  - git branch -a | grep -i “branchName”
 * create alias for colored branch listing in descending order of commit date
   - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
   - and then use git br
-* git branch -D <branch_name>
+* delete a local branch
+  - git branch -D <branch_name>
 
 ## clean
 * git clean -df
