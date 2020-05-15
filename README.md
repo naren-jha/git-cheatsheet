@@ -33,7 +33,7 @@ List of most frequently used git commands
 * to see local changes made in a particular file
   - git diff <local_file_fully_qualified_name>
 * to see changes added as part of a particular commit:
-  - git diff <commitId>~ <commitId>
+  - git diff <commit_id>~ <commit_id>
 
 ## get file/folder from another branch
 * git checkout <branch> -- <file_or_folder_path>
