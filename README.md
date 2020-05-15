@@ -21,9 +21,9 @@ List of most frequently used git commands
 ## branch
 * git branch
 * list local branches in descending order of commit date
-  - git branch --sort=-committerdate  # DESC
+  - git branch --sort=-committerdate
 * list local branches in ascending order of commit date
-  - git branch --sort=committerdate  # ASC
+  - git branch --sort=committerdate
 * search for a branch name
   - git branch -a | grep -i “branchName”
 * create alias for colored branch listing in descending order of commit date
