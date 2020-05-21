@@ -50,7 +50,9 @@ List of most frequently used git commands
 
 ## log
 * git log
+* git log -p <file>
 * git reflog
+* gitk <file>
 
 ## stash
 * stash all changes in local and get a clean repository
