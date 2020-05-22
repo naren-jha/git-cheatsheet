@@ -3,9 +3,10 @@ List of most frequently used git commands
 
 ## checkout
 * git checkout origin/remoteBranchName -b localBranchName
+* git checkout <file_or_folder>
 * git checkout .
 * get file/folder from another branch
-  - git checkout <branch> -- <file_or_folder_path>
+  - git checkout <branch_name> -- <file_or_folder>
 
 ## status, add, commit, push
 * git status
