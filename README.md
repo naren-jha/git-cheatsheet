@@ -50,9 +50,16 @@ List of most frequently used git commands
 
 ## log
 * git log
-* git log -p <file_path>
+* git log <file_name>
+* git log -p <file_name>
 * git reflog
-* gitk <file_path>
+* gitk <file_name>
+* beatified log
+  - crate alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
+  - then use any of the following:
+    * git lg
+    * git lg <file_name>
+    * git lg -p <file_name>
 
 ## stash
 * stash all changes in local and get a clean repository
