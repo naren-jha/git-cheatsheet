@@ -31,6 +31,8 @@ List of most frequently used git commands
   - and then use git br
 * delete a local branch
   - git branch -D <branch_name>
+* delete a remote branch
+  - git push origin :<remote_branch_name>
 
 ## clean
 * git clean -df
@@ -50,16 +52,20 @@ List of most frequently used git commands
 
 ## log
 * git log
-* git log <file_name>
-* git log -p <file_name>
+* To see commit log of a file:
+  - git log <file_name>
+* To see diffs of a file:
+  - git log -p <file_name>
+* To see diff of a file from a particular commit
+  - git log -p <commit_hash> -- <file_name>
 * git reflog
 * gitk <file_name>
 * beatified log
   - crate alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
-  - then use any of the following:
+  - then use 'git lg' instead of 'git log':
     * git lg
     * git lg <file_name>
-    * git lg -p <file_name>
+    * etc
 
 ## stash
 * stash all changes in local and get a clean repository
