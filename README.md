@@ -60,7 +60,7 @@ List of most frequently used git commands
   - git log -p <commit_hash> -- <file_name>
 * git reflog
 * gitk <file_name>
-* beatified log
+* beautified log
   - crate alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
   - then use 'git lg' instead of 'git log':
     * git lg
