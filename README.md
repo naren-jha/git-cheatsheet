@@ -1,6 +1,10 @@
 # git-cheatsheet
 List of most frequently used git commands
 
+## init
+* git init
+* echo "/bin/" >> .gitignore
+
 ## checkout
 * git checkout origin/remoteBranchName -b localBranchName
 * git checkout <file_or_folder>
@@ -11,6 +15,7 @@ List of most frequently used git commands
 ## status, add, commit, push
 * git status
 * git add <file_or_folder1> <file_or_folder2> <file_or_folder3>
+* git add .
 * git commit -m “commit message”
 * git push
 * git push origin localBranchName:remoteBranchName
