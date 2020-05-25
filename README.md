@@ -36,7 +36,9 @@ List of most frequently used git commands
   - git push origin :<remote_branch_name>
 
 ## clean
+* git clean -f
 * git clean -df
+* git clean -fdx
 * remove untracked file/path
   - git clean -f <untracked_file_or_folder>
 
@@ -50,6 +52,8 @@ List of most frequently used git commands
 * git reset HEAD
 * git reset HEAD --hard
 * git reset <commit_hash>
+* To remove a file from staging after 'git add'
+  - git reset HEAD <file_name>
 
 ## log
 * git log
@@ -82,4 +86,9 @@ List of most frequently used git commands
   - git stash pop <stash_number_or_stash_id>
 * stash selected file or folder
   - git stash push -m “message” <file_or_folder1> <file_or_folder2> <file_or_folder3>
+* to delete specific stash
+  - git stash drop stash@{n}
+* to delete all stash
+  - git stash clear
+
 
