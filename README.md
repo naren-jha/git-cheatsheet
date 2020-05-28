@@ -46,6 +46,8 @@ List of most frequently used git commands
 * git clean -fdx
 * remove untracked file/path
   - git clean -f <untracked_file_or_folder>
+* remove already added file
+  - git rm --cached <file_name>
 
 ## diff
 * to see local changes made in a particular file
