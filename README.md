@@ -73,7 +73,7 @@ List of most frequently used git commands
 * git reflog
 * gitk <file_name>
 * beautified log
-  - crate alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
+  - create alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
   - then use 'git lg' instead of 'git log':
     * git lg
     * git lg <file_name>
