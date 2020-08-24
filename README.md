@@ -54,6 +54,11 @@ List of most frequently used git commands
   - git diff <local_file_fully_qualified_name>
 * to see changes added as part of a particular commit:
   - git diff <commit_id>~ <commit_id>
+* list all files in a commit
+  - git diff-tree --no-commit-id --name-only -r <commit_id>
+    or create alias: 
+    git config --global alias.files "diff-tree --no-commit-id --name-only -r"
+    and then use: git files <commit_id>
 
 ## reset
 * git reset HEAD
