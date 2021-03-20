@@ -20,7 +20,7 @@ List of most frequently used git commands
 * git status
 * git add [file-or-folder1] [file-or-folder2] [file-or-folder3]
 * git add .
-* git commit -m “commit message”
+* git commit -m “[commit message]”
 * git push
 * git push origin [local-branch-name]:[remote-branch-name]
 
@@ -35,7 +35,7 @@ List of most frequently used git commands
 * list local branches in ascending order of commit date
   - git branch --sort=committerdate
 * search for a branch name
-  - git branch -a | grep -i “branchName”
+  - git branch -a | grep -i “[branch-name]”
 * create alias for colored branch listing in descending order of commit date
   - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
   - and then use git br
