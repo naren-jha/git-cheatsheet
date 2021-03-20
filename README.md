@@ -1,7 +1,7 @@
 # git-cheatsheet
 List of most frequently used git commands
 
-## SETUP
+## setup
 * git init
 * echo "/bin/" >> .gitignore
 * git clone [url]
@@ -44,15 +44,45 @@ List of most frequently used git commands
 * delete a remote branch
   - git push origin :[remote-branch-name]
 
-## clean
+## clean, remove
 * git clean -f
 * git clean -df
 * git clean -fdx
 * remove untracked [file/path]
   - git clean -f [untracked-file-or-folder]
+* git rm [file]
 * remove already added file
   - git rm --cached [file-name]
 
+## reset
+* git reset HEAD
+* git reset HEAD --hard
+* git reset [commit_hash]
+* To remove a file from staging after 'git add'
+  - git reset HEAD [file_name]
+
+## log
+* Show the commit history for the currently active branch
+  - git log
+* See commit log of a file
+  - git log [file_name]
+* Show the commits that changed file, even across renames
+  - git log --follow [file]
+* See diffs of a file
+  - git log -p <file_name>
+* See diff of a file from a particular commit
+  - git log -p [commit_hash] -- [file_name]
+* Show the commits on branchA that are not on branchB
+  - git log branchB..branchA
+* git reflog
+* gitk [file_name]
+* See beautified log
+  - create alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
+  - then use 'git lg' instead of 'git log':
+  - examples: 
+    - git lg
+    - git lg [file_name]
+ 
 ## diff
 * to see local changes made in a particular file
   - git diff [local_file_fully_qualified_name]
@@ -63,30 +93,10 @@ List of most frequently used git commands
   - or create alias: 
   - git config --global alias.files "diff-tree --no-commit-id --name-only -r"
   - and then use: git files [commit_id]
-
-## reset
-* git reset HEAD
-* git reset HEAD --hard
-* git reset [commit_hash]
-* To remove a file from staging after 'git add'
-  - git reset HEAD [file_name]
-
-## log
-* git log
-* To see commit log of a file:
-  - git log [file_name]
-* To see diffs of a file:
-  - git log -p <file_name>
-* To see diff of a file from a particular commit
-  - git log -p [commit_hash] -- [file_name]
-* git reflog
-* gitk [file_name]
-* beautified log
-  - create alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
-  - then use 'git lg' instead of 'git log':
-  - examples: 
-    - git lg
-    - git lg [file_name]
+* Show the diff of what is in branchA that is not in branchB
+  - git diff branchB...branchA
+* show any object in Git in human-readable format
+  - git show [SHA]
 
 ## stash
 * stash all changes in local and get a clean repository
