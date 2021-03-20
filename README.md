@@ -84,9 +84,8 @@ List of most frequently used git commands
 * beautified log
   - create alias like this: git config --global alias.lg "log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'\n--abbrev-commit --date=relative"
   - then use 'git lg' instead of 'git log':
-    * git lg
-    * git lg [file_name]
-    * etc
+    examples: git lg
+             git lg [file_name]
 
 ## stash
 * stash all changes in local and get a clean repository
