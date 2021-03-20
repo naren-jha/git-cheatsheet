@@ -49,7 +49,7 @@ List of most frequently used git commands
 * git clean -df
 * git clean -fdx
 * remove untracked [file/path]
-  - git clean -f [untracked-file_or-folder]
+  - git clean -f [untracked-file-or-folder]
 * remove already added file
   - git rm --cached [file-name]
 
