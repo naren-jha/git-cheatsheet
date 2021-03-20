@@ -16,13 +16,19 @@ List of most frequently used git commands
 * get file/folder from another branch
   - git checkout [branch-name] -- [file-or-folder]
 
-## status, add, commit, push
+## status, add, commit, push, pull
 * git status
 * git add [file-or-folder1] [file-or-folder2] [file-or-folder3]
 * git add .
 * git commit -m “[commit message]”
 * git push
 * git push origin [local-branch-name]:[remote-branch-name]
+* git pull
+* fetch down all the branches from remote
+  - git fetch [alias]
+* merge a remote branch into your current branch to bring it up to date
+  - git merge [alias]/[branch]
+
 
 ## alias
 * git config --global alias.ALIAS "WHAT"
