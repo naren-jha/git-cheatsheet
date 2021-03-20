@@ -1,24 +1,28 @@
 # git-cheatsheet
 List of most frequently used git commands
 
-## init
+## SETUP
 * git init
 * echo "/bin/" >> .gitignore
+* git clone [url]
+* git config --global user.name "[firstname lastname]"
+* git config --global user.email "[valid-email]"
+* git config --global color.ui auto
 
 ## checkout
-* git checkout origin/remoteBranchName -b localBranchName
-* git checkout <file_or_folder>
+* git checkout origin/remoteBranchName -b [local-branch-name]
+* git checkout [file-or-folder]
 * git checkout .
 * get file/folder from another branch
-  - git checkout <branch_name> -- <file_or_folder>
+  - git checkout [branch-name] -- [file-or-folder]
 
 ## status, add, commit, push
 * git status
-* git add <file_or_folder1> <file_or_folder2> <file_or_folder3>
+* git add [file-or-folder1] [file-or-folder2] [file-or-folder3]
 * git add .
 * git commit -m “commit message”
 * git push
-* git push origin localBranchName:remoteBranchName
+* git push origin [local-branch-name]:[remote-branch-name]
 
 ## alias
 * git config --global alias.ALIAS "WHAT"
@@ -36,18 +40,18 @@ List of most frequently used git commands
   - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
   - and then use git br
 * delete a local branch
-  - git branch -D <branch_name>
+  - git branch -D [branch-name]
 * delete a remote branch
-  - git push origin :<remote_branch_name>
+  - git push origin :[remote-branch-name]
 
 ## clean
 * git clean -f
 * git clean -df
 * git clean -fdx
 * remove untracked file/path
-  - git clean -f <untracked_file_or_folder>
+  - git clean -f [untracked-file_or-folder]
 * remove already added file
-  - git rm --cached <file_name>
+  - git rm --cached [file-name]
 
 ## diff
 * to see local changes made in a particular file
