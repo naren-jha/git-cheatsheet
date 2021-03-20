@@ -84,16 +84,16 @@ List of most frequently used git commands
     - git lg [file_name]
  
 ## diff
-* to see local changes made in a particular file
+* see local changes made in a particular file
   - git diff [local_file_fully_qualified_name]
-* to see changes added as part of a particular commit:
+* see changes added as part of a particular commit:
   - git diff [commit_id]~ [commit_id]
 * list all files in a commit
   - git diff-tree --no-commit-id --name-only -r [commit_id]
   - or create alias: 
   - git config --global alias.files "diff-tree --no-commit-id --name-only -r"
   - and then use: git files [commit_id]
-* Show the diff of what is in branchA that is not in branchB
+* show the diff of what is in branchA that is not in branchB
   - git diff branchB...branchA
 * show any object in Git in human-readable format
   - git show [SHA]
