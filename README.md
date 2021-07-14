@@ -1,6 +1,9 @@
 # git-cheatsheet
 List of most frequently used git commands
 
+## add git branch to iterm
+* https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
+
 ## setup
 * git init
 * echo "/bin/" >> .gitignore
