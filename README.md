@@ -66,7 +66,8 @@ List of most frequently used git commands
 
 ## reset
 * git reset HEAD
-* git reset HEAD --hard
+* git reset --hard HEAD
+* git reset --hard origin/[remote_branch]
 * git reset [commit_hash]
 * To remove a file from staging after 'git add'
   - git reset HEAD [file_name]
