@@ -129,6 +129,7 @@ List of most frequently used git commands
 
 ## rebase
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
+* https://stackoverflow.com/a/41464876
 * merge three commits into one
   - git rebase -i HEAD~3
   - press i to edit
@@ -141,3 +142,8 @@ List of most frequently used git commands
   - If you had pushed these commits already, force-push instead by using following commands
   - git push --force OR 
   - git push --force-with-lease (use this command when collaborating with others, why? - https://stackoverflow.com/a/37460330)
+
+## cherry-pick
+* git cherry-pick [commit_hash]
+* git cherry-pick [fromCommit]^..[toCommit]
+  - use carrot (^) in fromCommit to include fromCommit, without ^ it'll exclude fromCommit.
