@@ -134,10 +134,10 @@ List of most frequently used git commands
 ## rebase
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
 * https://stackoverflow.com/a/41464876
-* merge three commits into one
+* squash last n commits into one
   - git rebase -i HEAD~3
   - press i to edit
-  - pick and squash the commits as you like
+  - pick and squash the commits as you like (most of the time, you would want to keep the first commit as pick and change remaining commits to squash)
   - press ESC
   - :wq! [w - save, q - exit, ! - don't ask for confirmation]
   - in the next screen, edit the commit message as you like
