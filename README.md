@@ -150,4 +150,4 @@ List of most frequently used git commands
 ## cherry-pick
 * git cherry-pick [commit_hash]
 * git cherry-pick [fromCommit]^..[toCommit]
-  - use carrot (^) in fromCommit to include fromCommit, without ^ it'll exclude fromCommit.
+  - carrot (^) is used to point to immediate previous commit. use carrot (^) in fromCommit to include fromCommit, without ^ cherry-pick excludes fromCommit.
