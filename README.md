@@ -127,4 +127,17 @@ List of most frequently used git commands
 * to delete all stash
   - git stash clear
 
-
+## rebase
+* https://docs.gitlab.com/ee/topics/git/git_rebase.html
+* merge two commits into one
+  - git rebase -i HEAD~3
+  - press i to edit
+  - pick and squash the commits as you like
+  - press ESC
+  - :wq! [w - save, q - exit, ! - don't ask for confirmation]
+  - in the next screen, edit the commit message as you like
+  - then again :wq!
+  - If you haven’t pushed your commits to the remote branch before rebasing, push your changes normally. 
+  - If you had pushed these commits already, force-push instead by using following commands
+  - git push --force OR 
+  - git push --force-with-lease (use this command when collaborating with others, why? - https://stackoverflow.com/a/37460330)
