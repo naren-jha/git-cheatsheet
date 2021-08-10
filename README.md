@@ -129,7 +129,7 @@ List of most frequently used git commands
 
 ## rebase
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
-* merge two commits into one
+* merge three commits into one
   - git rebase -i HEAD~3
   - press i to edit
   - pick and squash the commits as you like
