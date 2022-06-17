@@ -76,8 +76,8 @@ List of most frequently used git commands
 * Show the commit history for the currently active branch
   - git log
 * Show one liner pretty log
+  - git log --oneline
   - git log --pretty=oneline
-  - or create an alias like this: git config --global alias.lpr "log --pretty=oneline" and then use "git lpr"
 * See commit log of a file
   - git log [file_name]
 * Show the commits that changed file, even across renames
