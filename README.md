@@ -33,7 +33,6 @@ List of most frequently used git commands
   - git fetch [alias]
 * merge a remote branch into your current branch to bring it up to date
   - git merge [alias]/[branch]
-
 * add all and commit in one command
   - git commit -am "[commit message]"
 
