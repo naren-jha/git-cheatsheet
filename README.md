@@ -75,6 +75,8 @@ List of most frequently used git commands
 ## log
 * Show the commit history for the currently active branch
   - git log
+* Show 'n' most recent commit on the current branch
+  - git log -[n]
 * Show one liner pretty log
   - git log --oneline
   - git log --pretty=oneline
