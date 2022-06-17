@@ -4,7 +4,7 @@ List of most frequently used git commands
 ## add git branch to iterm
 * https://stackoverflow.com/a/58375763
 * https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
-* use "oh my zsh" instead
+* [UPDATE] use "oh my zsh" instead
 
 ## setup
 * `git init`
