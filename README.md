@@ -19,6 +19,7 @@ List of most frequently used git commands
 * git checkout .
 * get file/folder from another branch
   - git checkout [branch-name] -- [file-or-folder]
+* git switch -c [branchname]
 
 ## status, add, commit, push, pull
 * git status
@@ -32,6 +33,9 @@ List of most frequently used git commands
   - git fetch [alias]
 * merge a remote branch into your current branch to bring it up to date
   - git merge [alias]/[branch]
+
+* add all and commit in one command
+  - git commit -am "[commit message]"
 
 
 ## alias
