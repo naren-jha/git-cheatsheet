@@ -107,7 +107,7 @@ create alias for colored branch listing in descending order of commit date and t
 * `git stash drop stash@{n}` - to delete specific stash
 * `git stash clear` - to delete all stash
 
-## rebase
+## rebase, squash commits into one
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
 * https://stackoverflow.com/a/41464876
 * squash last n commits into one
