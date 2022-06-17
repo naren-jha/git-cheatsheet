@@ -22,7 +22,7 @@ List of most frequently used git commands
 
 ## switch - newer way of doing checkout
 * `git switch [branchname]` - Switch to a different branch
-* `git switch -c [branchname]` - Create a new branch and then switch to it
+* `git switch -c [branchname]` - Create a new local branch (from current one) and then switch to it
 
 ## status, add, commit, push, pull
 * `git status`
