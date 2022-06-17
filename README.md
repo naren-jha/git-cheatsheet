@@ -126,8 +126,9 @@ create alias for colored branch listing in descending order of commit date and t
   - https://youtu.be/RwvTrSm7zEY
 
 #### squashing while merging into another branch (using git merge)
-* `git merge --squash [origin/feature]` - this will bring all the changes that's been done in origin/feature into your local but it will not commit it. you'll have to commit and push manually. this change is already staged so you don't have to do `git add`.
+* `git merge --squash [origin/feature]` - this will bring all the changes that's been done in origin/feature into your local but it will not commit it. you'll have to commit and push yourself. 
 * so `git commit -m "mergin feature-xyz into master"` and `git push`
+* this change is already staged so you don't have to do `git add`.
 
 
 ### rebase vs merge [ff (fast-forward) merge commit vs rebase merge]
