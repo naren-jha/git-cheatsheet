@@ -107,7 +107,8 @@ create alias for colored branch listing in descending order of commit date and t
 * `git stash drop stash@{n}` - to delete specific stash
 * `git stash clear` - to delete all stash
 
-## rebase, squash commits into one
+## rebase
+### squash commits into one
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
 * https://stackoverflow.com/a/41464876
 * squash last n commits into one
@@ -122,6 +123,9 @@ create alias for colored branch listing in descending order of commit date and t
   - If you had pushed these commits already, force-push instead by using following commands
   - `git push --force` OR 
   - `git push --force-with-lease` (use this command when collaborating with other developers, why? - https://stackoverflow.com/a/37460330)
+
+### rebase vs merge | ff (fast-forward) vs merge commit vs rebase
+* https://youtu.be/7Mh259hfxJg
 
 ## cherry-pick
 * `git cherry-pick [commit_hash]`
