@@ -19,6 +19,9 @@ List of most frequently used git commands
 * git checkout .
 * get file/folder from another branch
   - git checkout [branch-name] -- [file-or-folder]
+
+## switch - newer way of doing checkout
+* `git switch`
 * git switch -c [branchname]
 
 ## status, add, commit, push, pull
