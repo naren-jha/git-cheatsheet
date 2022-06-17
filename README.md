@@ -134,7 +134,8 @@ create alias for colored branch listing in descending order of commit date and t
 
 ### rebase vs merge [ff (fast-forward) merge commit vs rebase merge]
 * https://youtu.be/7Mh259hfxJg
-* `git switch [feature_branch]` Then 
+* first update your local master `git switch master` and then `git pull` Then
+* go to your feature branch `git switch [feature_branch]` And then 
 * `git rebase master` - rebase feature_branch on the tip of current master. be aware that 'rebase' rewrites history; so never rebase commits that's been shared with other people, that means if you've alraedy pushed your commits to remote, most likely others will be using it, so DON'T rebase if your work is already on remote.
 
 ## cherry-pick
