@@ -127,7 +127,7 @@ create alias for colored branch listing in descending order of commit date and t
 ### rebase vs merge | ff (fast-forward) vs merge commit vs rebase
 * https://youtu.be/7Mh259hfxJg
 * `git switch [feature_branch]` Then 
-* `git rebase master` - rebase feature_branch on the tip of  current master. Note that this will create new commits instead of merging existing one with a merge commit (which is what `git merge` does)
+* `git rebase master` - rebase feature_branch on the tip of  current master
 
 ## cherry-pick
 * `git cherry-pick [commit_hash]`
