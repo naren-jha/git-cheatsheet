@@ -43,7 +43,8 @@ List of most frequently used git commands
   - example: `git config --global alias.st "status"`
 
 ## branch
-* `git branch`
+* `git branch` list local branches
+* `git branch [branch_name]` create a new local branch form the current local
 * `git branch --sort=-committerdate` list local branches in descending order of commit date
 * `git branch --sort=committerdate` list local branches in ascending order of commit date
 * `git branch -a | grep -i “[branch-name]”` search for a branch name
