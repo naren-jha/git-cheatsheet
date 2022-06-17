@@ -4,71 +4,61 @@ List of most frequently used git commands
 ## add git branch to iterm
 * https://stackoverflow.com/a/58375763
 * https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
+* use "oh my zsh" instead
 
 ## setup
-* git init
-* echo "/bin/" >> .gitignore
-* git clone [url]
-* git config --global user.name "[firstname lastname]"
-* git config --global user.email "[valid-email]"
-* git config --global color.ui auto
+* `git init`
+* `echo "/bin/" >> .gitignore`
+* `git clone [url]`
+* `git config --global user.name "[firstname lastname]"`
+* `git config --global user.email "[valid-email]"`
+* `git config --global color.ui auto`
 
 ## checkout
-* git checkout origin/[remote-branch-name] -b [local-branch-name]
-* git checkout [file-or-folder]
-* git checkout .
-* get file/folder from another branch
-  - git checkout [branch-name] -- [file-or-folder]
+* `git checkout origin/[remote-branch-name] -b [local-branch-name]`
+* `git checkout [file-or-folder]`
+* `git checkout .`
+* `git checkout [branch-name] -- [file-or-folder]` Get file/folder from another branch
 
 ## switch - newer way of doing checkout
-* `git switch`
-* git switch -c [branchname]
+* `git switch [branchname]` - Switch to a different branch
+* `git switch -c [branchname]` - Create a new branch and then switch to it
 
 ## status, add, commit, push, pull
-* git status
-* git add [file-or-folder1] [file-or-folder2] [file-or-folder3]
-* git add .
-* git commit -m “[commit message]”
-* git push
-* git push origin [local-branch-name]:[remote-branch-name]
-* git pull
-* fetch down all the branches from remote
-  - git fetch [alias]
-* merge a remote branch into your current branch to bring it up to date
-  - git merge [alias]/[branch]
-* add all and commit in one command
-  - git commit -am "[commit message]"
-
+* `git status`
+* `git add [file-or-folder1] [file-or-folder2] [file-or-folder3]`
+* `git add .`
+* `git commit -m “[commit message]”`
+* `git push`
+* `git push origin [local-branch-name]:[remote-branch-name]` 
+  - use `-u` to associate to a remote
+  - use `-f` to force the push
+* `git pull`
+* `git fetch` - fetch down all the branches from remote
+* `git merge [alias]/[branch]` - merge a remote branch into your current branch to bring it up to date
+* `git commit -am "[commit message]"` - add (all local change) and commit in one command
 
 ## alias
-* git config --global alias.ALIAS "WHAT"
-  - example: git config --global alias.st "status"
+* `git config --global alias.ALIAS "WHAT"`
+  - example: `git config --global alias.st "status"`
 
 ## branch
-* git branch
-* list local branches in descending order of commit date
-  - git branch --sort=-committerdate
-* list local branches in ascending order of commit date
-  - git branch --sort=committerdate
-* search for a branch name
-  - git branch -a | grep -i “[branch-name]”
-* create alias for colored branch listing in descending order of commit date
-  - git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" 
-  - and then use git br
-* delete a local branch
-  - git branch -D [branch-name]
-* delete a remote branch
-  - git push origin :[remote-branch-name]
+* `git branch`
+* `git branch --sort=-committerdate` list local branches in descending order of commit date
+* `git branch --sort=committerdate` list local branches in ascending order of commit date
+* `git branch -a | grep -i “[branch-name]”` search for a branch name
+* `git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'" `
+create alias for colored branch listing in descending order of commit date and then use git br 
+* `git branch -D [branch-name]` delete a local branch
+* `git push origin :[remote-branch-name]` delete a remote branch
 
 ## clean, remove
-* git clean -f
-* git clean -df
-* git clean -fdx
-* remove untracked [file/path]
-  - git clean -f [untracked-file-or-folder]
-* git rm [file]
-* remove already added file
-  - git rm --cached [file-name]
+* `git clean -f`
+* `git clean -df`
+* `git clean -fdx`
+* `git clean -f [untracked-file-or-folder]` remove untracked [file/path]
+* `git rm [file]`
+* `git rm --cached [file-name]` remove already added file
 
 ## reset
 * git reset HEAD
