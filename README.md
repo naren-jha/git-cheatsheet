@@ -112,7 +112,7 @@ create alias for colored branch listing in descending order of commit date and t
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
 * https://stackoverflow.com/a/41464876
 * squash last n commits into one
-  - `git rebase -i HEAD~3`
+  - `git rebase -i HEAD~3` OR `git rebase -i [commit-hash]`
   - press i to edit
   - 'pick' and 'squash' the commits as you like (most of the time, you would want to keep the first commit as 'pick' and change remaining commits to 'squash')
   - press ESC
@@ -123,6 +123,7 @@ create alias for colored branch listing in descending order of commit date and t
   - If you had pushed these commits already, force-push instead by using following commands
   - `git push --force` OR 
   - `git push --force-with-lease` (use this command when collaborating with other developers, why? - https://stackoverflow.com/a/37460330)
+  - https://youtu.be/RwvTrSm7zEY
 
 ### rebase vs merge [ff (fast-forward) merge commit vs rebase merge]
 * https://youtu.be/7Mh259hfxJg
