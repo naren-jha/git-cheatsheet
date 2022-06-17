@@ -108,7 +108,7 @@ create alias for colored branch listing in descending order of commit date and t
 * `git stash clear` - to delete all stash
 
 ## rebase
-### squash commits into one
+### interactive rebasing and squashing commits into one
 * https://docs.gitlab.com/ee/topics/git/git_rebase.html
 * https://stackoverflow.com/a/41464876
 * squash last n commits into one
@@ -124,7 +124,7 @@ create alias for colored branch listing in descending order of commit date and t
   - `git push --force` OR 
   - `git push --force-with-lease` (use this command when collaborating with other developers, why? - https://stackoverflow.com/a/37460330)
 
-### rebase vs merge | ff (fast-forward) merge commit vs rebase
+### rebase vs merge [ff (fast-forward) merge commit vs rebase merge]
 * https://youtu.be/7Mh259hfxJg
 * `git switch [feature_branch]` Then 
 * `git rebase master` - rebase feature_branch on the tip of current master. be aware that 'rebase' rewrites history; so never rebase commits that's been shared with other people, that means if you've alraedy pushed your commits to remote, most likely others will be using it, so DON'T rebase if your work is already on remote.
