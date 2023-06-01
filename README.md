@@ -142,3 +142,5 @@ create alias for colored branch listing in descending order of commit date and t
 * `git cherry-pick [commit_hash]`
 * `git cherry-pick [fromCommit]^..[toCommit]`
   - carrot (^) is used to point to immediate previous commit. use carrot (^) in fromCommit to include fromCommit, without ^ cherry-pick excludes fromCommit.
+* `git push` - to push the changes to remote
+* `git cherry-pick --quit` - to conclude the cherry-pick (end the cherry-pick sequence)
