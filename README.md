@@ -146,7 +146,8 @@ create alias for colored branch listing in descending order of commit date and t
 * `git cherry-pick --quit` - to conclude the cherry-pick (end the cherry-pick sequence)
 
 ## add git branch to iterm
-* https://stackoverflow.com/a/20309062/4210068 + https://stackoverflow.com/a/58528709/4210068
+* Use this - https://stackoverflow.com/a/64851981/4210068 + https://stackoverflow.com/a/58528709/4210068
+* https://stackoverflow.com/a/20309062/4210068 
 * https://stackoverflow.com/a/58375763/4210068
 * https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
 * [UPDATE] Use "oh my zsh" instead
