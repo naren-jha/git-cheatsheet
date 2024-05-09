@@ -1,12 +1,6 @@
 # git-cheatsheet
 List of most frequently used git commands
 
-## add git branch to iterm
-* https://stackoverflow.com/a/20309062/4210068 + https://stackoverflow.com/a/58528709/4210068
-* https://stackoverflow.com/a/58375763/4210068
-* https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
-* [UPDATE] Use "oh my zsh" instead
-
 ## setup
 * `git init`
 * `echo "/bin/" >> .gitignore`
@@ -150,3 +144,9 @@ create alias for colored branch listing in descending order of commit date and t
   - carrot (^) is used to point to immediate previous commit. use carrot (^) in fromCommit to include fromCommit, without ^ cherry-pick excludes fromCommit.
 * `git push` - to push the changes to remote
 * `git cherry-pick --quit` - to conclude the cherry-pick (end the cherry-pick sequence)
+
+## add git branch to iterm
+* https://stackoverflow.com/a/20309062/4210068 + https://stackoverflow.com/a/58528709/4210068
+* https://stackoverflow.com/a/58375763/4210068
+* https://www.mfitzp.com/tutorials/add-git-branch-name-to-terminal-prompt-mac/
+* [UPDATE] Use "oh my zsh" instead
