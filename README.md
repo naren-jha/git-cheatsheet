@@ -85,6 +85,10 @@ create alias for colored branch listing in descending order of commit date and t
   - then use `git lg` instead of `git log`, like
   - `git lg`
   - `git lg [file_name]`
+* See beautified log - one line
+  - create alias like this: `git config --global alias.lpr "log --pretty=oneline"`
+  - then use git lpr
+
  
 ## diff
 * `git diff [local_file_fully_qualified_name]` - see local changes made in a particular file
