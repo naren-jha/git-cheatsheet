@@ -47,7 +47,8 @@ List of most frequently used git commands
 * `git branch [branch_name]` create a new local branch form the current local
 * `git branch --sort=-committerdate` list local branches in descending order of commit date
 * `git branch --sort=committerdate` list local branches in ascending order of commit date
-* `git branch -a | grep -i “[branch-name]”` search for a branch name
+* `git branch -a | grep -i “[branch-name]”` search for a branch name across local and remote
+* `git branch -r | grep -i “[branch-name]”` search for a branch name in all remote branches
 * `git config --global alias.br "for-each-ref --sort=-committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"` 
 create alias for colored branch listing in descending order of commit date and then use git br 
 * `git branch -D [branch-name]` delete a local branch
